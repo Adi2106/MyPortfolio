@@ -172,7 +172,7 @@
           <div class="row">
             <div class="col-sm col-md-5 Form">
               <div class="mb-3 ">
-                <label for="exampleFormControlInput1" class=" text-white form-label">Your Name</label>
+                <label for="exampleFormControlInput1" class=" text-white form-label" id="Name" >Your Name</label>
                   <input type="name" name="Name" required style="background-color: #86B2C7; " class="form-control"  placeholder="Enter Your Full Name">
               </div>
               <div class="mb-3 ">
@@ -183,10 +183,17 @@
                 <label for="exampleFormControlTextarea1" class="text-white form-label">Enter Your Feedback</label>
                 <textarea name="feedback" required style="background-color: #86B2C7;" class="form-control"  id="exampleFormControlTextarea1" rows="2" ></textarea>
               </div>
-              <button type="submit" class="btn bg-primary text-white mb-2 mt-2 rounded" name="button" style="border: 2px solid white;">Submit</button>
+              <button type="submit" class="btn bg-primary text-white mb-2 mt-2 rounded" onclick="clicked()" name="button" style="border: 2px solid white;">Submit</button>
             </div>
           </div>
         </form>
+
+        <script type="text/javascript">
+          function clicked(){
+            var nm = document.getElementById("Name");
+            alert("Thanks for your valuable feedback!")
+          };
+        </script>
 
           <div class=" mt-4 text-white gap-3">
             <i class="fas fa-phone"> +91 6394473619</i><br>
