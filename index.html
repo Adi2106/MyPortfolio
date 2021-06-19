@@ -54,17 +54,127 @@
               font-size: 20px;
               text-align: center;
             }
-            .px-2 h1 {
-              color: black !important;
-              animation-name: example;
-              animation-duration: 4s;
-            }
+          }
+          .Lets{
+            animation-name: example;
+            animation-duration: 2s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
 
-            @keyframes example {
-              0%   {color: black;}
-              25%  {color: yellow;}
-              50%  {color: blue;}
-              100% {color: green;}
+          }
+
+          @keyframes example {
+            from{
+              color: white;
+              font-size: 50px;
+            }
+            to{
+              color: #0D6EFD;
+              font-size: 52px;
+            }
+          }
+          #HTML{
+            animation-name: h;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+          }
+          @keyframes h {
+            from{
+              color: #f4470b;
+            }
+            to{
+              color: #EAF5FB;
+            }
+          }
+          #CSS{
+            animation-name: c;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+          }
+          @keyframes c {
+            from{
+              color: ;
+            }
+            to{
+              color: #EAF5FB;
+            }
+          }
+          #BootS{
+            animation-name: B;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+          }
+          @keyframes B {
+            from{
+              color: #730fef;
+            }
+            to{
+              color: #EAF5FB;
+            }
+          }
+          #JS{
+            animation-name: J;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+          }
+          @keyframes J {
+            from{
+              color: #e4d04b;
+            }
+            to{
+              color: #EAF5FB;
+            }
+          }
+          #React{
+            animation-name: R;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+          }
+          @keyframes R {
+            from{
+              color: #5dd2f1;
+            }
+            to{
+              color: #EAF5FB;
+            }
+          }
+          #Nodejs{
+            animation-name: N;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+          }
+          @keyframes N {
+            from{
+              color: darkgreen;
+            }
+            to{
+              color: #EAF5FB;
+            }
+          }
+          #JAVA{
+            animation-name: JA;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+          }
+          @keyframes JA {
+            from{
+              color: ;
+            }
+            to{
+              color: #EAF5FB;
+            }
+          }
+          #AWS{
+            animation-name: A;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+          }
+          @keyframes A {
+            from{
+              color: #F29100;
+            }
+            to{
+              color: #EAF5FB;
             }
           }
         </style>
@@ -132,29 +242,29 @@
 
         <!-- <h1 id = "skills" class=" text-center fs-1 fw-bold" style="color:#0000FF; font-family: 'Roboto', sans-serif; font-weight: 5em;">MY SKILL SET</h1> -->
 
-        <div class=" SkillLogoo py-0 justify-content-evenly d-flex  mt-3 py-2">
-          <i class=" SkillLogo fab fa-html5 fa-7x" style="color: #f4470b"><p style="font-size: 20px; text-align: center;"><b>HTML</b></p></i>
-          <i class=" SkillLogo fab fa-css3-alt fa-7x text-primary"><p style="font-size: 20px; text-align: center;"><b>CSS</b> </p></i>
-          <i class=" SkillLogo fab fa-bootstrap fa-7x" style="color: #730fef"><p style="font-size: 20px; text-align: center;"><b>Bootstrap</b> </p></i>
+        <div class="  py-0 justify-content-evenly d-flex  mt-3 py-2">
+          <i class="  fab fa-html5 fa-7x" style="color: #f4470b"><p id="HTML" style="font-size: 20px; text-align: center;"><b>HTML</b></p></i>
+          <i class="  fab fa-css3-alt fa-7x text-primary"><p id="CSS" style="font-size: 20px; text-align: center;"><b>CSS</b> </p></i>
+          <i class="  fab fa-bootstrap fa-7x" style="color: #730fef"><p id="BootS" style="font-size: 20px; text-align: center;"><b>Bootstrap</b> </p></i>
         </div>
         <div class="py-0 justify-content-evenly d-flex  mt-3 py-2">
-          <i class=" SkillLogo fab fa-js-square fa-7x" style="color: #e4d04b"><p style="font-size: 20px; text-align: center;"><b>JavaScript</b> </p></i>
-          <i class=" SkillLogo fab fa-react fa-7x " style="color: #5dd2f1"><p style="font-size: 20px; text-align: center;"><b>React</b> </p></i>
-          <i class=" SkillLogo fab fa-node fa-7x" style="color: #68ba44"><p style="font-size: 20px; text-align: center; color: darkgreen;"><b>Node JS</b> </p></i>
+          <i class="  fab fa-js-square fa-7x" style="color: #e4d04b"><p id="JS" style="font-size: 20px; text-align: center;"><b>JavaScript</b> </p></i>
+          <i class="  fab fa-react fa-7x " style="color: #5dd2f1"><p id="React" style="font-size: 20px; text-align: center;"><b>React</b> </p></i>
+          <i class="  fab fa-node fa-7x" style="color: #68ba44"><p id="Nodejs" style="font-size: 20px; text-align: center; color: darkgreen;"><b>Node JS</b> </p></i>
         </div>
         <div class="py-0 justify-content-evenly d-flex  mt-3 mb-3">
-          <i class=" SkillLogo fab fa-java fa-7x " style="color: #F783AC"><p style="font-size: 20px; text-align: center; color: darkblue;" class="mt-1"><b>JAVA</b> </p></i>
-          <i class=" SkillLogo fab fa-aws fa-7x " style="color: #222E3D"><p style="font-size: 20px; text-align: center; color: #F29100;" class="mt-1"><b>AWS</b> </p> </i>
+          <i class="  fab fa-java fa-7x " style="color: #F783AC"><p id="JAVA" style="font-size: 20px; text-align: center; color: darkblue;" class="mt-1"><b>JAVA</b> </p></i>
+          <i class="  fab fa-aws fa-7x " style="color: #222E3D"><p id="AWS" style="font-size: 20px; text-align: center; color: #F29100;" class="mt-1"><b>AWS </b> </p> </i>
         </div>
       </section>
       <!-- WORKS -->
       <section  id="works" class=" " style= " border-top: 4px solid #05334C; background-image: url('https://images.unsplash.com/photo-1584985598389-3a36cb7aa1c4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80'); background-size: cover; background-position: left;">
         <!-- My Works -->
         <!-- <h1 class="bg-dull  text-center text-primary  fs-1 fw-bold" style= " font-family: 'Roboto', sans-serif; font-weight: 5em;" >My Feats</h1> -->
-        <div class=" px-5 d-flex d-mb-none flex-column flex-md-row justify-content-md-evenly gap-2 mt-4 py-5 ">
+        <div class="px-5 d-flex d-mb-none flex-column flex-md-row justify-content-md-evenly gap-2 mt-4 py-5 ">
           <!-- Academics -->
           <div class="card" style="width: 100%; height: 100%; ">
-            <img src="images/Acad.JPG" height="350px" class="card-img-top" alt="..." >
+            <img src="images/Acad.jpg" height="350px" class="card-img-top" alt="..." >
             <div class="card-body " style="background-color: #9AC7DB ">
               <h5 class="card-title" style="font-size: 2em;"><b>Academics & Technical</b></h5>
               <p class="card-text">Topper of Abdul Kalam Technical University, <br> Uttar Pradesh, India(Academic year-> 2018-19)
@@ -193,7 +303,7 @@
       <!-- CONTACT ME -->
       <section class="px-2" id="Contact" style="border-top: 4px dashed black; background-image: url('https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80'); background-size: cover; background-position: center;">
         <!-- Contact Me -->
-        <h1 style= " margin-top: 40px; margin-bottom: 20px; font-style: italic; font-weight: 5em; font-size: 50px;" class="Lets text-white text-center fw-bold py-2">Let's Connect!</h1>
+        <h1 style= " margin-top: 40px; margin-bottom: 20px; font-style: italic; font-weight: 5em; font-size: 50px; color: white;" class="Lets text-center fw-bold py-2">Let's Connect!</h1>
         <form  action="/" method="post">
           <div class="row">
             <div class="col-sm col-md-5 Form">
