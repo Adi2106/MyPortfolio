@@ -12,6 +12,10 @@
       .press:hover{
         color: yellow;
       }
+      .Pr:hover{
+        border: 5px solid yellow;
+        border-style: groove;
+      }
       .card{
         border: 5px solid #1A2833;
         box-shadow: 20px 20px 20px #263849;
@@ -30,6 +34,22 @@
           margin-left: 10%;
         }
       }
+      .View{
+        animation-name: view;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes view {
+        0%{background-color: #263849; color: white;}
+        25%{background-color: #F8F9FA;color: #263849;}
+        75%{background-color: #263849; color: white;}
+        100%{background-color: #F8F9FA;color: #263849;}
+      }
+      .Individual:hover{
+        border: 6px solid #F8F9FA;
+        border-style: groove;
+        z-index: 500;
+      }
     </style>
   </head>
   <body style= "background-image: url('https://images.unsplash.com/photo-1509624776920-0fac24a9dfda?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80'); background-size: cover; ">
@@ -38,7 +58,7 @@
       <!-- First two Cards -->
       <div class="d-flex d-mb-none flex-column flex-md-row justify-content-md-evenly gap-3">
         <section class="w-50 h-75">
-          <div class="card mb-3 text-white " style="width: 100%; height: 100%; background-color: #263849">
+          <div class="Individual card mb-3 text-white " style="width: 100%; height: 100%; background-color: #263849">
           <div class="row g-0">
             <div class="col-md-7">
               <img src="images/stategold.jpg" class="w-100 h-100" alt="...">
@@ -49,8 +69,8 @@
                 <p class="card-text">Was the winner of ASISC State Championship held in Lucknow in the year 2018.
                 Was the captain of my team in the States as well as in the Nationals which was held in Bangalore in December 2018.</p>
 
-                <div style="margin-top: 100px;">
-                  <a href="images/stategold.jpg" class="text-dark bg-light btn btn-dark btn-outline-light " ><b>View</b>
+                <div >
+                  <a href="images/stategold.jpg" class="btn btn-outline-light View" style="margin-top: 110px; background-color: #263849; color: white;"><b>View</b>
                   <i class="fas fa-eye"></i></a>
                 </div>
               </div>
@@ -60,7 +80,7 @@
         </div>
         </section>
         <section class="w-50 h-75">
-          <div class="card  text-black " style="width: 100%; height: 100%; background-color: #263849">
+          <div class="Individual card  text-black " style="width: 100%; height: 100%; background-color: #263849">
           <div class="row g-0">
             <div class="col-md-7">
               <img src="images/sports1.jpg" class="w-100 h-100" alt="...">
@@ -73,8 +93,8 @@
                   as well as Shield by the Principal of the school in Nov' 2018.
 
                 </p>
-                <div style="margin-top: 169px;">
-                <a href="images/sports1.jpg" class="text-dark bg-light btn btn-dark btn-outline-light " ><b>View</b>
+                <div >
+                <a href="images/sports1.jpg" class="btn btn-outline-light View" style="margin-top: 180px; background-color: #263849; color: white;"><b>View</b>
                 <i class="fas fa-eye"></i></a>
                 </div>
               </div>
@@ -86,7 +106,7 @@
       <!-- Second Two Cards -->
       <div class="d-flex d-mb-none flex-column flex-md-row justify-content-md-evenly gap-3">
         <section class="w-50 h-75">
-          <div class="card mb-3 text-black " style="width: 100%; height: 100%; background-color: #263849">
+          <div class="Individual card mb-3 text-black " style="width: 100%; height: 100%; background-color: #263849">
           <div class="row g-0">
             <div class="col-md-7">
               <img src="images/sports2.jpg" class="w-100 h-100" alt="...">
@@ -96,8 +116,8 @@
                 <h5 class="card-title fs-4">Inter College Cricket Champion</h5>
                 <p class="card-text">Winner of Inter College District Level Cricket Championship
                    held in Ghaziabaad, UP in August 2019.</p>
-                <div style="margin-top: 150px;">
-                  <a href="images/sports2.jpg" class="text-dark bg-light btn btn-dark btn-outline-light" ><b>View</b>
+                <div >
+                  <a href="images/sports2.jpg" class="btn btn-outline-light View" style="margin-top: 130px; background-color: #263849; color: white;"><b>View</b>
                   <i class="fas fa-eye"></i></a>
                 </div>
 
@@ -108,7 +128,7 @@
         </div>
         </section>
         <section class="w-50 h-75">
-          <div class="card mb-3 text-black " style="width: 100%; height: 100%;  background-color: #263849">
+          <div class="Individual card mb-3 text-black " style="width: 100%; height: 100%;  background-color: #263849">
           <div class="row g-0">
             <div class="col-md-7">
               <img src="images/sports3.jpg" class="w-100 h-100"  width="60px" height="50px" alt="...">
@@ -119,8 +139,8 @@
                 <p class="card-text">District Champion in Badminton for <br> Three cosecutive years from 2014-2016 in <br> Under 13 and Under 15 category.
 
                  </p>
-                <div style="margin-top: 153px;">
-                  <a href="images/sports3.jpg" class="text-dark bg-light btn btn-dark btn-outline-light" ><b>View</b>
+                <div >
+                  <a href="images/sports3.jpg" class="btn btn-outline-light View" style="margin-top: 132px; background-color: #263849; color: white;"><b>View</b>
                   <i class="fas fa-eye"></i></a>
                 </div>
 
@@ -130,8 +150,8 @@
         </div>
         </section>
       </div>
-      <a href="SportsGallery.html" style="text-decoration: none; text-align: center; ">
-        <h1 class="text-white fs-1" style="border: 4px solid black; border-radius: 20px; background-color: #263849 "><b class="press" style="margin-bottom: 3px; ">Press Clippings</b></h1>
+      <a class="" href="SportsGallery.html" style="text-decoration: none; text-align: center; ">
+        <h1 class="Pr text-white fs-1" style="border: 4px solid black; border-radius: 20px; background-color: #263849 "><b class="press" style="margin-bottom: 3px; ">Press Clippings</b></h1>
       </a>
     </main>
 
