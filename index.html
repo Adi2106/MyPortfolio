@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <style media="screen">
+    <style media="screen">          
           *{
             margin: 0px;
           }
@@ -37,7 +37,7 @@
           }
           @media (max-width: 800px) {
             .Form{
-              max-width: 60%;
+              max-width: 100%;
             }
           }
           @media (max-width: 800px) {
@@ -46,8 +46,20 @@
               margin-bottom: 30px;
               position: relative;
             }
+            @media (max-width: 800px) {              
+              .ContactForm
+              {
+                width: 100% !important;
+                display: block;                 
+                                             
+              }
+              .ImageContact{                                
+                display: none !important;
+              }  
+              
+            }  
             .Form{
-              margin-left: 20px;
+              margin-left: 20%;
             }
             .fw-bold {
               font-size: 50px;
@@ -209,13 +221,13 @@
           <a class="navbar-brand" href="#">            
           <img src="images/l.png"  width="60%;">
         </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <b><a class="nav-link ListItems " aria-current="page" href="#" style= " color:#131C21; font-weight: 10rem; ">Home</a></b>
+                <b><a class="nav-link ListItems " aria-current="page" href="#" style= " color:#131C21; font-weight: 10rem; " >Home</a></b>
               </li>
               <li class="nav-item">
                 <b><a class="nav-link ListItems " href="#skills" style= " color:#131C21; font-weight: 10rem;">My Tech Skills</a></b>
@@ -286,7 +298,7 @@
         <div class="px-3 d-flex d-mb-none flex-column flex-md-row justify-content-md-evenly gap-2 py-3 ">
           <!-- Academics -->
           <div class="card" style="width: 100%; height: 100%; ">
-            <img src="images/Acad.jpg" height="350px" class="card-img-top" alt="..." >
+            <img src="images/Acad.JPG" height="350px" class="card-img-top" alt="..." >
             <div class="card-body " style="background-color: #9AC7DB ">
               <h5 class="card-title" style="font-size: 2em;"><b>Academics & Technical</b></h5>
               <p class="card-text">Topper of Abdul Kalam Technical University, <br> Uttar Pradesh, India(Academic year-> 2018-19)
@@ -328,7 +340,7 @@
       <section class="px-3" >
         <!-- Contact Me -->
         <h1 style= " margin-top: 40px; margin-bottom: 20px; font-style: italic; font-weight: 5em; font-size: 50px; color: #131C21; text-align: center;" class="Lets py-2">Let's Connect!</h1>
-        <div style="display: flex;"> 
+        <div style="display: flex; flex-wrap: wrap;" class="ContactForm"> 
           <form  action="/mailto:adityamukherjee2106@gmail.com" method="post" style="width: 50%;">
             <div class="row">
               <div class="Form" >
@@ -348,7 +360,7 @@
               </div>
             </div>
           </form>
-          <img src="letsConnect.svg" alt="" style="width: 50%;  ">
+          <img src="letsConnect.svg" class="ImageContact" style="width: 50%;  ">
         </div>
         <div style="background-color: #beecf0; ">
           <div class=" mt-4 text-white gap-3 Mail" style="text-align: center;" >
