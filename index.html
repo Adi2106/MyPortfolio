@@ -19,12 +19,21 @@
             border: 5px solid #1A2833;
             box-shadow: 20px 20px 30px #263849;
           }
-          .btn:hover{
-            font-size: 17px;
-          }
+          
           body{
             overflow-x: hidden;
             margin-right: 0px;
+          }
+          .ListItems{
+            text-shadow: 1px 1px 1px #131C21;
+          }
+          .Lhover:hover{
+            color: #1c76fd !important;
+          }
+          .SubmitButton:hover{
+            background-color: #4790fd !important;
+            color: #000;
+            text-shadow: 1px 1px 1px #131C21;
           }
           @media (max-width: 800px) {
             .Form{
@@ -67,17 +76,17 @@
 
           @keyframes example {
             from{
-              color: white;
+              color: #212529;
               font-size: 50px;
             }
             to{
-              color: #0D6EFD;
+              color: #CBF1E6;
               font-size: 52px;
             }
           }
           #HTML{
             animation-name: h;
-            animation-duration: 3s;
+            animation-duration: 4s;
             animation-iteration-count: infinite;
           }
           @keyframes h {
@@ -85,25 +94,25 @@
               color: #f4470b;
             }
             to{
-              color: #EAF5FB;
+              color: #CBF1E6;
             }
           }
           #CSS{
             animation-name: c;
-            animation-duration: 3s;
+            animation-duration: 4s;
             animation-iteration-count: infinite;
           }
           @keyframes c {
             from{
-              color: ;
+              color: #0D6EFD;
             }
             to{
-              color: #EAF5FB;
+              color: #CBF1E6;
             }
           }
           #BootS{
             animation-name: B;
-            animation-duration: 3s;
+            animation-duration: 4s;
             animation-iteration-count: infinite;
           }
           @keyframes B {
@@ -111,12 +120,12 @@
               color: #730fef;
             }
             to{
-              color: #EAF5FB;
+              color: #CBF1E6;
             }
           }
           #JS{
             animation-name: J;
-            animation-duration: 3s;
+            animation-duration: 4s;
             animation-iteration-count: infinite;
           }
           @keyframes J {
@@ -124,12 +133,12 @@
               color: #e4d04b;
             }
             to{
-              color: #EAF5FB;
+              color: #CBF1E6;
             }
           }
           #React{
             animation-name: R;
-            animation-duration: 3s;
+            animation-duration: 4s;
             animation-iteration-count: infinite;
           }
           @keyframes R {
@@ -137,12 +146,12 @@
               color: #5dd2f1;
             }
             to{
-              color: #EAF5FB;
+              color: #CBF1E6;
             }
           }
           #Nodejs{
             animation-name: N;
-            animation-duration: 3s;
+            animation-duration: 4s;
             animation-iteration-count: infinite;
           }
           @keyframes N {
@@ -150,25 +159,25 @@
               color: darkgreen;
             }
             to{
-              color: #EAF5FB;
+              color: #CBF1E6;
             }
           }
           #JAVA{
             animation-name: JA;
-            animation-duration: 3s;
+            animation-duration: 4s;
             animation-iteration-count: infinite;
           }
           @keyframes JA {
             from{
-              color: ;
+              color: #F783AC;
             }
             to{
-              color: #EAF5FB;
+              color: #CBF1E6;
             }
           }
           #AWS{
             animation-name: A;
-            animation-duration: 3s;
+            animation-duration: 4s;
             animation-iteration-count: infinite;
           }
           @keyframes A {
@@ -176,7 +185,7 @@
               color: #F29100;
             }
             to{
-              color: #EAF5FB;
+              color: #CBF1E6;
             }
           }
           .Explore{
@@ -192,14 +201,12 @@
           }
         </style>
   </head>
-  <body >
+  <body  style="background-color: #CBF1E6;">
     <!-- Nav Bar -->
     <section class="NavBar sticky-top" >
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+      <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #beecf0; text-decoration-color: #000;">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <!-- <b>AM</b><span></span>
-          <i class="fas fa-infinity"></i> -->
+          <a class="navbar-brand" href="#">            
           <img src="images/l.png"  width="60%;">
         </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -208,18 +215,18 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <b><a class="nav-link ListItems " aria-current="page" href="#" style= " color:#131C21; font-weight: 10rem; ">Home</a></b>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#skills" style= " color:#fFF; font-weight: 5em;">My Tech Skills</a>
+                <b><a class="nav-link ListItems " href="#skills" style= " color:#131C21; font-weight: 10rem;">My Tech Skills</a></b>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#works" style= " color:#fFF; font-weight: 5em;">My Feats</a>
+                <b><a class="nav-link ListItems " href="#feats" style= " color:#131C21; font-weight: 10rem;">My Feats</a></b>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Contact" style= " color:#fFF; font-weight: 5em;">Contact Me
-                <i class="fas fa-mobile-alt fa-1x" style="color: #000;"></i>
-              </a>
+                <b><a class="nav-link ListItems " href="#Contact" style= " color:#131C21; font-weight: 10rem;">Contact Me
+                  <i class="fas fa-mobile-alt fa-1x" style="color: #131C21;"></i>
+                </a></b>
               </li>
             </ul>
           </div>
@@ -229,7 +236,7 @@
     <span id="Home" ></span>
     <main >
       <!-- INTRO -->
-      <section style="background-image: url('https://images.unsplash.com/photo-1524623243236-187b50e18f9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: left;" class="d-flex justify-content-md-evenly flex-md-row-reverse justify-content-sm-center align-items-center flex-column-reverse">
+      <section  class="d-flex justify-content-md-evenly flex-md-row-reverse justify-content-sm-center align-items-center flex-column-reverse">
         <div class="fs-2 d-flex align-items-md-start justify-content-sm-center align-items-center flex-column" >
           <h3>Hi!👋</h3>
           <h2>I'm Aditya Mukherjee</h2>
@@ -237,25 +244,26 @@
             <span class="typing" ></span>
           </p>
 
-          <button style="margin-bottom: 15px;" type="button" name="button" class="btn bg-primary text-white"><a style="color: white; text-decoration: none;"
+          <button  type="button" name="button" ><a style="color: #212529; background-color: #beecf0; text-decoration: none;  border-radius: 10px;"
             href="Resume.pdf">
             <b>My Resume</b></a></button>
+
         </div>
 
         <div class="d-md-none w-50 h-50">
           <img src="images/picture.jpg" alt="Image" class=" w-100 h-100 rounded-circle shadow py-3">
         </div>
         <div class="d-none d-md-block w-25 h-25">
-          <img src="images/picture.jpg" alt="Image" style="margin: 50px; " width="500px" class="py-5 w-100 h-100 rounded-circle shadow">
+          <img src="images/picture.jpg" alt="Image" style="margin: 50px; " width="500px" class="py-5 w-100 h-100 rounded-circle ">
         </div>
       </section>
       <!-- SILLS -->
-      <section id = "skills" class="bg-dull py-5 " style= "background-image: url('https://images.unsplash.com/photo-1509624776920-0fac24a9dfda?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80'); background-size: cover; background-position: left;">
+      <section id = "skills" class="bg-dull py-5 " >
         <!-- My Skills -->
 
-        <!-- <h1 id = "skills" class=" text-center fs-1 fw-bold" style="color:#0000FF; font-family: 'Roboto', sans-serif; font-weight: 5em;">MY SKILL SET</h1> -->
+        <h1 id = "skills" class=" text-center fs-1 fw-bold" style="color: #131C21; text-shadow: 1px 1px 1px #131C21; font-family: 'Roboto', sans-serif; font-weight: 5em;">MY SKILL SET</h1>
 
-        <div class="  py-0 justify-content-evenly d-flex  mt-3 py-2">
+        <div class="  py-0 justify-content-evenly d-flex  py-1">
           <i class="  fab fa-html5 fa-7x" style="color: #f4470b"><p id="HTML" style="font-size: 20px; text-align: center;"><b>HTML</b></p></i>
           <i class="  fab fa-css3-alt fa-7x text-primary"><p id="CSS" style="font-size: 20px; text-align: center;"><b>CSS</b> </p></i>
           <i class="  fab fa-bootstrap fa-7x" style="color: #730fef"><p id="BootS" style="font-size: 20px; text-align: center;"><b>Bootstrap</b> </p></i>
@@ -271,13 +279,14 @@
         </div>
       </section>
       <!-- WORKS -->
-      <section  id="works" class=" " style= " border-top: 4px solid #05334C; background-image: url('https://images.unsplash.com/photo-1584985598389-3a36cb7aa1c4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80'); background-size: cover; background-position: left;">
-        <!-- My Works -->
-        <!-- <h1 class="bg-dull  text-center text-primary  fs-1 fw-bold" style= " font-family: 'Roboto', sans-serif; font-weight: 5em;" >My Feats</h1> -->
-        <div class="px-3 d-flex d-mb-none flex-column flex-md-row justify-content-md-evenly gap-2 mt-4 py-5 ">
+      <section  id="feats"  >
+        
+        <h1 class="bg-dull  text-center  fs-1 fw-bold" style= "color: #131C21; text-shadow: 1px 1px 1px #131C21; font-family: 'Roboto', sans-serif; font-weight: 5em;" >My Feats</h1>
+        <span></span>
+        <div class="px-3 d-flex d-mb-none flex-column flex-md-row justify-content-md-evenly gap-2 py-3 ">
           <!-- Academics -->
           <div class="card" style="width: 100%; height: 100%; ">
-            <img src="images/Acad.JPG" height="350px" class="card-img-top" alt="..." >
+            <img src="images/Acad.jpg" height="350px" class="card-img-top" alt="..." >
             <div class="card-body " style="background-color: #9AC7DB ">
               <h5 class="card-title" style="font-size: 2em;"><b>Academics & Technical</b></h5>
               <p class="card-text">Topper of Abdul Kalam Technical University, <br> Uttar Pradesh, India(Academic year-> 2018-19)
@@ -313,44 +322,47 @@
             </div>
           </div>
         </div>
+        </section>
       <!-- CONTACT ME -->
-      <section class="px-3" id="Contact" style="border-top: 4px dashed black; background-image: url('https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80'); background-size: cover; background-position: center;">
+      <div id="Contact" style="margin-bottom: 5%;"></div>
+      <section class="px-3" >
         <!-- Contact Me -->
-        <h1 style= " margin-top: 40px; margin-bottom: 20px; font-style: italic; font-weight: 5em; font-size: 50px; color: white;" class="Lets text-center fw-bold py-2">Let's Connect!</h1>
-        <form  action="/" method="post">
-          <div class="row">
-            <div class="col-sm col-md-5 Form">
-              <div class="mb-3 ">
-                <label for="exampleFormControlInput1" class=" text-white form-label"><b>Your Name</b> </label>
-                  <input type="name" name="Name" required style="background-color: #86B2C7; " class="form-control"  placeholder="Enter Your Full Name">
+        <h1 style= " margin-top: 40px; margin-bottom: 20px; font-style: italic; font-weight: 5em; font-size: 50px; color: #131C21; text-align: center;" class="Lets py-2">Let's Connect!</h1>
+        <div style="display: flex;"> 
+          <form  action="/mailto:adityamukherjee2106@gmail.com" method="post" style="width: 50%;">
+            <div class="row">
+              <div class="Form" >
+                <div class="mb-3 ">
+                  <label for="exampleFormControlInput1" class="  form-label" style="color: #131C21; text-shadow: 1px 1px 0px #131C21;"><b>Your Name</b> </label>
+                    <input type="name" name="Name" required style="background-color: #beecf0; " class="form-control"  placeholder="Enter Your Full Name">
+                </div>
+                <div class="mb-3 ">
+                  <label for="exampleFormControlInput1" class="  form-label" style="color: #131C21; text-shadow: 1px 1px 0px #131C21;"><b>Email address</b> </label>
+                    <input type="email" name="Email" required style="background-color: #beecf0; " class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3 ">
+                  <label for="exampleFormControlTextarea1"  class="form-label" style="color: #131C21; text-shadow: 1px 1px 0px #131C21;"><b>Feedback</b> </label>
+                  <textarea name="feedback" required placeholder = "Enter Your feedback" style="background-color: #beecf0;" class="form-control"  id="exampleFormControlTextarea1" rows="2" ></textarea>
+                </div>
+                <button type="submit"  formaction="mailto:adityamukherjee2106@gmail.com"  class="btn SubmitButton mb-2 mt-2 rounded" name="button" style="color: #131C21; background-color: #beecf0; border: 2px solid #131C21;">Submit</button>                
               </div>
-              <div class="mb-3 ">
-                <label for="exampleFormControlInput1" class=" text-white form-label"><b>Email address</b> </label>
-                  <input type="email" name="Email" required style="background-color: #86B2C7; " class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-              </div>
-              <div class="mb-3 ">
-                <label for="exampleFormControlTextarea1"  class="text-white form-label"><b>Feedback</b> </label>
-                <textarea name="feedback" required placeholder = "Enter Your feedback" style="background-color: #86B2C7;" class="form-control"  id="exampleFormControlTextarea1" rows="2" ></textarea>
-              </div>
-              <button type="submit" class="btn bg-primary text-white mb-2 mt-2 rounded" onclick="clicked()" name="button" style="border: 2px solid white;">Submit</button>
-              <script type="text/javascript">
-                function clicked(){
-                  confirm("Are You sure you want to submit?")
-                  alert("Thanks for your valuable feedback!")
-                };
-              </script>
             </div>
-          </div>
-        </form>
-        <div class=" mt-4 text-white gap-3 Mail">
-          <i class="fas fa-phone"> +91 6394473619</i><br>
-          <a href="mailto:adityamukherjee2106@gmail.com" style="text-decoration: none; color: white;">adityamukherjee2106@gmail.com  <i class="fas fa-reply"></i></a>
+          </form>
+          <img src="letsConnect.svg" alt="" style="width: 50%;  ">
         </div>
-            <div class="py-2 Logs">
-              <a href="https://github.com/Adi2106"><i class=" fa-3x fab fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/aditya-mukherjee-984380187/"><i class="fa-3x fab px-2 fa-linkedin-in"></i></a>
-              <a href="https://www.instagram.com/addu_mukku/"><i class="fab fa-instagram px-2 fa-3x"></i></a>
+        <div style="background-color: #beecf0; ">
+          <div class=" mt-4 text-white gap-3 Mail" style="text-align: center;" >
+            <i class="fas fa-phone" style="text-decoration: none; color: #131C21;"> +91 6394473619</i><br>
+            <a href="mailto:adityamukherjee2106@gmail.com" style="text-decoration: none; color: #131C21;">adityamukherjee2106@gmail.com  <i class="fas fa-reply"></i></a>
+          </div>
+            <div class="py-2 Logs " style="text-align: center; text-shadow: 1px 1px 1px #131C21;">
+                <a href="https://github.com/Adi2106"><i class=" Lhover fa-3x fab fa-github" style=" color: #131C21;"></i></a>
+                <a href="https://www.linkedin.com/in/aditya-mukherjee-984380187/"><i class="Lhover fa-3x fab px-2 fa-linkedin-in" style=" color: #131C21;"></i></a>
+                <a href="https://www.instagram.com/addu_mukku/"><i class="Lhover fab fa-instagram px-2 fa-3x" style=" color: #131C21;"></i></a>
+                <p style=" color: #131C21;" >&copy Copyrights Reversed</p>
             </div>
+              
+        </div>
       </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
