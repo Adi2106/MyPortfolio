@@ -40,6 +40,12 @@
               max-width: 100%;
             }
           }
+          @media(min-width: 1100px)
+          {
+            #hamburger-menu{
+              display: none;
+            }
+          }
           @media (max-width: 800px) {
             .card{
               max-width: 100% !important;
@@ -218,16 +224,16 @@
   <body  style="background-color: #bfe1fd;">
     <!-- Nav Bar -->
     <section class="NavBar sticky-top" >
-      <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #b8ddfb; text-decoration-color: #000; ">
+      <nav class="navbar navbar-expand-lg navbar-dark " id="ham-navigation" class="ham-menu" style="background-color: #b8ddfb; text-decoration-color: #000; ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">            
           <img src="images/l.png"  width="60%;">
         </a>
-          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button id="hamburger-menu" style="background-color: #b8ddfb; border: 2px solid #b8ddfb;" data-toggle="ham-navigation" class="hamburger-menu-button" class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon hamburger-menu-button-open"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu">
               <li class="nav-item">
                 <b><a class="nav-link ListItems " aria-current="page" href="#" style= " color:#131C21; font-weight: 10rem; " >Home</a></b>
               </li>
@@ -258,7 +264,7 @@
             <span class="typing" ></span>
           </p>
 
-          <button  type="button" name="button" ><a style="color: #212529; background-color: #b8ddfb; text-decoration: none;  border-radius: 10px;"
+          <button  type="button" name="button" ><a style="color: #212529; background-color: #B8DDFB; text-decoration: none;  border-radius: 10px;"
             href="Resume.pdf">
             <b>My Resume</b></a></button>
 
@@ -272,10 +278,9 @@
         </div>
       </section>
       <!-- SILLS -->
-      <section id = "skills" class="bg-dull py-5 " >
-        <!-- My Skills -->
-
-        <h1 id = "skills" class=" text-center fs-1 fw-bold" style="color: #131C21; text-shadow: 1px 1px 1px #131C21; font-family: 'Roboto', sans-serif; font-weight: 5em;">MY SKILL SET</h1>
+      <section class="bg-dull" style="margin-bottom: 5%;" >
+        <!-- My Skills -->             
+        <h1 id="skills" class=" text-center fs-1 fw-bold" style="color: #131C21; text-shadow: 1px 1px 1px #131C21; font-family: 'Roboto', sans-serif; font-weight: 5em; margin-top: 5%;">MY SKILL SET</h1>
 
         <div class="  py-0 justify-content-evenly d-flex  py-1">
           <i class="  fab fa-html5 fa-7x" style="color: #f4470b"><p id="HTML" style="font-size: 20px; text-align: center;"><b>HTML</b></p></i>
@@ -292,9 +297,8 @@
           <i class="  fab fa-aws fa-7x " style="color: #222E3D"><p id="AWS" style="font-size: 20px; text-align: center; color: #F29100;" class="mt-1"><b>AWS </b> </p> </i>
         </div>
       </section>
-      <!-- WORKS -->
-      <section  id="feats"  >
-        
+      <!-- WORKS -->      
+      <section id="feats">
         <h1 class="bg-dull  text-center  fs-1 fw-bold" style= "color: #131C21; text-shadow: 1px 1px 1px #131C21; font-family: 'Roboto', sans-serif; font-weight: 5em;" >My Feats</h1>
         <span></span>
         <div class="px-3 d-flex d-mb-none flex-column flex-md-row justify-content-md-evenly gap-2 py-3 ">
