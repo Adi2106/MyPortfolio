@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <style media="screen">          
+          *{
+            margin: 0px;
+          }
+          .card{
+            border: 5px solid #1A2833;
+            box-shadow: 20px 20px 30px #263849;
+          }
+          
+          body{
+            overflow-x: hidden;
+            margin-right: 0px;
+          }
+          .ListItems{
+            text-shadow: 1px 1px 1px #131C21;
+          }
+          .Lhover:hover{
+            color: #1c76fd !important;
+          }
+          .SubmitButton:hover{
+            background-color: #4790fd !important;
+            color: #000;
+            text-shadow: 1px 1px 1px #131C21;
+          }
+          @media (max-width: 800px) {
+            .Form{
+              max-width: 100%;
+            }
+          }
+          @media(min-width: 1100px)
+          {
+            #hamburger-menu{
+              display: none;
+            }
+          }
+          @media (max-width: 800px) {
+            .card{
+              max-width: 100% !important;
+              margin-bottom: 30px;
+              position: relative;
+            }
+            @media (max-width: 800px) {              
+              .ContactForm
+              {
+                width: 100% !important;
+                display: block;                 
+                                             
+              }
+              .ImageContact{                                
+                display: none !important;
+              }  
+              
+            }  
+            .Form{
+              margin-left: 20%;
+            }
+            .fw-bold {
+              font-size: 50px;
+              text-align: center;
+            }
+            .Logs{
+              font-size: 20px;
+              text-align: center;
+
+            }
+            .Logs:hover{
+              color: #86B2C7;
+            }
+            .Mails{
+              font-size: 20px;
+              text-align: center;
+            }
+          }
+          .Lets{
+            animation-name: example;
+            animation-duration: 2s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+
+          }
+
+          @keyframes example {
+            from{
+              color: #212529;
+              font-size: 50px;
+            }
+            to{
+              color: #bfe1fd;
+              font-size: 52px;
+            }
+          }
+          #HTML{
+            animation-name: h;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+          }
+          @keyframes h {
+            from{
+              color: #f4470b;
+            }
+            to{
+              color: #bfe1fd;
+            }
+          }
+          #CSS{
+            animation-name: c;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+          }
+          @keyframes c {
+            from{
+              color: #0D6EFD;
+            }
+            to{
+              color: #bfe1fd;
+            }
+          }
+          #BootS{
+            animation-name: B;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+          }
+          @keyframes B {
+            from{
+              color: #730fef;
+            }
+            to{
+              color: #bfe1fd;
+            }
+          }
+          #JS{
+            animation-name: J;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+          }
+          @keyframes J {
+            from{
+              color: #e4d04b;
+            }
+            to{
+              color: #bfe1fd;
+            }
+          }
+          #React{
+            animation-name: R;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+          }
+          @keyframes R {
+            from{
+              color: #5dd2f1;
+            }
+            to{
+              color: #bfe1fd;
+            }
+          }
+          #Nodejs{
+            animation-name: N;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+          }
+          @keyframes N {
+            from{
+              color: darkgreen;
+            }
+            to{
+              color: #bfe1fd;
+            }
+          }
+          #JAVA{
+            animation-name: JA;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+          }
+          @keyframes JA {
+            from{
+              color: #F783AC;
+            }
+            to{
+              color: #bfe1fd;
+            }
+          }
+          #AWS{
+            animation-name: A;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+          }
+          @keyframes A {
+            from{
+              color: #F29100;
+            }
+            to{
+              color: #bfe1fd;
+            }
+          }
+          .Explore{
+            animation-name: Exp;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+          }
+          @keyframes Exp {
+            0%{background-color: #212529;}
+            25%{background-color: #bfe1fd;}
+            75%{background-color: #212529;}
+            100%{background-color: #212529;}
+          }
+        </style>
+        <!-- #CBF1E6; 
+        #beecf0-->
+  </head>
+  <body  style="background-color: #D7EAF2;">
+    <!-- Nav Bar -->
+    <section class="NavBar sticky-top" >
+      <nav class="navbar navbar-expand-lg navbar-dark " id="ham-navigation" class="ham-menu" style="background-color: #B8DDFB; text-decoration-color: #000; ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">            
+          <img src="images/l.png"  width="60%;">
+        </a>
+          <button id="hamburger-menu" style="background-color: #b8ddfb; border: 2px solid #b8ddfb;" data-toggle="ham-navigation" class="hamburger-menu-button" class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon hamburger-menu-button-open"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu">
+              <li class="nav-item">
+                <b><a class="nav-link ListItems " aria-current="page" href="#" style= " color:#1F2732; font-weight: 10rem; " >Home</a></b>
+              </li>
+              <li class="nav-item">
+                <b><a class="nav-link ListItems " href="#skills" style= " color:#1F2732; font-weight: 10rem;">My Tech Skills</a></b>
+              </li>
+              <li class="nav-item">
+                <b><a class="nav-link ListItems " href="#feats" style= " color:#1F2732; font-weight: 10rem;">My Feats</a></b>
+              </li>
+              <li class="nav-item">
+                <b><a class="nav-link ListItems " href="#Contact" style= " color:#1F2732; font-weight: 10rem;">Contact Me
+                  <i class="fas fa-mobile-alt fa-1x" style="color: #1F2732;"></i>
+                </a></b>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <span id="Home" ></span>
+    <main >
+      <!-- INTRO -->
+      <section  class="d-flex justify-content-md-evenly flex-md-row-reverse justify-content-sm-center align-items-center flex-column-reverse">
+        <div class="fs-2 d-flex align-items-md-start justify-content-sm-center align-items-center flex-column" >
+          <h3>Hi!👋</h3>
+          <h2>I'm Aditya Mukherjee</h2>
+          <p style="font-size: 25px; ">I Am
+            <span class="typing" ></span>
+          </p>
+
+          <button  type="button" name="button" ><a style="color: #212529; background-color: #B8DDFB; text-decoration: none;  border-radius: 10px;"
+            href="Resume.pdf">
+            <b>My Resume</b></a></button>
+        </div>
+
+        <div class="d-md-none w-50 h-50">
+          <img src="images/picture.jpg" alt="Image" class=" w-100 h-100 rounded-circle shadow py-3">
+        </div>
+        <div class="d-none d-md-block w-25 h-25">
+          <img src="images/picture.jpg" alt="Image" style="margin: 50px; " width="500px" class="py-5 w-100 h-100 rounded-circle ">
+        </div>
+      </section>
+      <!-- SILLS -->
+      <section class="bg-dull" style="margin-bottom: 5%;" >                   
+        <h1 id="skills" class=" text-center fs-1 fw-bold" style="color: #131C21; text-shadow: 1px 1px 1px #131C21; font-family: 'Roboto', sans-serif; font-weight: 5em; margin-top: 5%;">MY SKILL SET</h1>
+
+        <div class="  py-0 justify-content-evenly d-flex  py-1">
+          <i class="  fab fa-html5 fa-7x" style="color: #f4470b"><p id="HTML" style="font-size: 20px; text-align: center;"><b>HTML</b></p></i>
+          <i class="  fab fa-css3-alt fa-7x text-primary"><p id="CSS" style="font-size: 20px; text-align: center;"><b>CSS</b> </p></i>
+          <i class="  fab fa-bootstrap fa-7x" style="color: #730fef"><p id="BootS" style="font-size: 20px; text-align: center;"><b>Bootstrap</b> </p></i>
+        </div>
+        <div class="py-0 justify-content-evenly d-flex  mt-3 py-2">
+          <i class="  fab fa-js-square fa-7x" style="color: #e4d04b"><p id="JS" style="font-size: 20px; text-align: center;"><b>JavaScript</b> </p></i>
+          <i class="  fab fa-react fa-7x " style="color: #5dd2f1"><p id="React" style="font-size: 20px; text-align: center;"><b>React</b> </p></i>
+          <i class="  fab fa-node fa-7x" style="color: #68ba44"><p id="Nodejs" style="font-size: 20px; text-align: center; color: darkgreen;"><b>Node JS</b> </p></i>
+        </div>
+        <div class="py-0 justify-content-evenly d-flex  mt-3 mb-3">
+          <i class="  fab fa-java fa-7x " style="color: #F783AC"><p id="JAVA" style="font-size: 20px; text-align: center; color: darkblue;" class="mt-1"><b>JAVA</b> </p></i>
+          <i class="  fab fa-aws fa-7x " style="color: #222E3D"><p id="AWS" style="font-size: 20px; text-align: center; color: #F29100;" class="mt-1"><b>AWS </b> </p> </i>
+        </div>
+      </section>
+      <!-- WORKS -->      
+      <section id="feats">
+        <h1 class="bg-dull  text-center  fs-1 fw-bold" style= "color: #131C21; text-shadow: 1px 1px 1px #131C21; font-family: 'Roboto', sans-serif; font-weight: 5em;" >My Feats</h1>
+        <span></span>
+        <div class="px-3 d-flex d-mb-none flex-column flex-md-row justify-content-md-evenly gap-2 py-3 ">
+          <!-- Academics -->
+          <div class="card" style="width: 100%; height: 100%; ">
+            <img src="images/Acad.JPG" height="350px" class="card-img-top" alt="..." >
+            <div class="card-body " style="background-color: #9AC7DB ">
+              <h5 class="card-title" style="font-size: 2em;"><b>Academics & Technical</b></h5>
+              <p class="card-text">Topper of Abdul Kalam Technical University, <br> Uttar Pradesh, India(Academic year-> 2018-19)
+              </p>
+              <a href="acadmics.html" style="background-color: #212529; color: white;" class="btn Explore">Explore
+              <i class="fas fa-eye"></i></a>
+            </div>
+          </div>
+          <!-- Cultural -->
+          <div class="card" style="width: 100%; height: 60% " >
+            <img src="images/cultural.jpg" height="350px" class="card-img-top" alt="...">
+            <div class="card-body" style="background-color: #9AC7DB ">
+              <h5 class="card-title" style="font-size: 2em;"><b>Cultural</b></h5>
+              <p class="card-text">
+                An Elocutionist ||
+                A Debator <br>
+                A Public Speaker</p>
+              <a href="cultural.html" style="background-color: #212529; color: white;" class="btn Explore">Explore
+              <i class="fas fa-eye"></i></a>
+            </div>
+          </div>
+          <!-- Sports -->
+          <div class="card " style="width: 100%; height: 100%">
+            <img src="images/sports1.jpg" class="card-img-top" height="350px" alt="...">
+            <div class="card-body" style="background-color: #9AC7DB ">
+              <h5 class="card-title" style="font-size: 2em;"><b>Sports</b></h5>
+              <p class="card-text">National Level Shuttler ||
+                State Level Cricketer <br>
+                An Athelete.
+              </p>
+              <a href="sports.html" style="background-color: #212529; color: white;" class="btn Explore">Explore
+              <i class="fas fa-eye"></i></a>
+            </div>
+          </div>
+        </div>
+        </section>
+      <!-- CONTACT ME -->
+      <div id="Contact" style="margin-bottom: 5%;"></div>
+      <section class="px-3" >
+        <!-- Contact Me -->
+        <h1 style= " margin-top: 40px; margin-bottom: 20px; font-style: italic; font-weight: 5em; font-size: 50px; color: #131C21; text-align: center;" class="Lets py-2">Let's Connect!</h1>
+        <div style="display: flex; flex-wrap: wrap;" class="ContactForm"> 
+          <form  action="/mailto:adityamukherjee2106@gmail.com" method="post" style="width: 50%;">
+            <div class="row">
+              <div class="Form" >
+                <div class="mb-3 ">
+                  <label for="exampleFormControlInput1" class="  form-label" style="color: #131C21; text-shadow: 1px 1px 0px #131C21;"><b>Your Name</b> </label>
+                    <input type="name" name="Name" required style="background-color: #beecf0; " class="form-control"  placeholder="Enter Your Full Name">
+                </div>
+                <div class="mb-3 ">
+                  <label for="exampleFormControlInput1" class="  form-label" style="color: #131C21; text-shadow: 1px 1px 0px #131C21;"><b>Email address</b> </label>
+                    <input type="email" name="Email" required style="background-color: #beecf0; " class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3 ">
+                  <label for="exampleFormControlTextarea1"  class="form-label" style="color: #131C21; text-shadow: 1px 1px 0px #131C21;"><b>Feedback</b> </label>
+                  <textarea name="feedback" required placeholder = "Enter Your feedback" style="background-color: #beecf0;" class="form-control"  id="exampleFormControlTextarea1" rows="2" ></textarea>
+                </div>  
+                <button type="submit" class="" formaction="mailto:adityamukherjee2106@gmail.com"  class="btn SubmitButton mb-2 mt-2 rounded" name="button" style="color: #131C21; background-color: #beecf0; border: 2px solid #131C21;">Submit</button>                
+              </div>
+            </div>
+          </form>
+          <img src="letsConnect.svg" class="ImageContact" style="width: 50%;  ">
+        </div>
+        <div style="background-color: #B8DDFB;">
+          <div class=" mt-4 text-white gap-3 Mail" style="text-align: center;" >
+            <i class="fas fa-phone" style="text-decoration: none; color: #131C21;"> +91 6394473619</i><br>
+            <a href="mailto:adityamukherjee2106@gmail.com" style="text-decoration: none; color: #131C21;">adityamukherjee2106@gmail.com  <i class="fas fa-reply"></i></a>
+          </div>
+            <div class="py-2 Logs " style="text-align: center; text-shadow: 1px 1px 1px #131C21;">
+                <a href="https://github.com/Adi2106"><i class=" Lhover fa-3x fab fa-github" style=" color: #131C21;"></i></a>
+                <a href="https://www.linkedin.com/in/aditya-mukherjee-984380187/"><i class="Lhover fa-3x fab px-2 fa-linkedin-in" style=" color: #131C21;"></i></a>
+                <a href="https://www.instagram.com/addu_mukku/"><i class="Lhover fab fa-instagram px-2 fa-3x" style=" color: #131C21;"></i></a>
+                <p style=" color: #131C21;" >&copy Copyrights Reversed</p>
+            </div>
+              
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+      max: 25,
+      speed: 400,
+      glare: false,
+      "max-glare": 1,
+    });
+    </script>
+  </body>
+</html>
